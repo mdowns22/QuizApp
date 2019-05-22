@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+.eagles-logo {
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.quiz-start {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.begin {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.begin:hover {
+    cursor: pointer;
+}
+
+.question {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.answer-field {
+    text-align: center;
+}
+
+.progression {
+    text-align: right;
+    margin-right: 100px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.current-score {
+    margin-left: 30px;
+}
+
+.quiz-section {
+    text-align: center;
+    display: block;
+    font-size: 30px;
+}
+input[type=radio] {
+    display: inline-block;
+}
+
+.option {
+    font-size: 20px;
+}
+
+.kick-off {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.kick-off {
+    cursor: pointer;
+}
