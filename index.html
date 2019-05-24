@@ -6,20 +6,21 @@
         <title>Philadelphia Eagles Quiz</title>
         <meta name="description" content="Philadelphia Eagles trivia"> 
         <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
     <body>
         <header class="eagles-logo">logo here</header>
         <main>
             <section class="quiz-start">
                     <h1 class="intro">Do you think you know enough to be a Philadelphia Eagles fan?</h1>
-                    <button type="submit" class="begin">Start Here</button>
+                    <button type="submit" class="begin" id="js-begin">Start Here</button>
             </section>
-            <section class="progression">
-        <span class="question-num">Question: 1 out of 10 </span><span class="current-score">Score: 0</span>
+           <section class="progression">
+                <span class="question-num">Question: 1 out of 10 </span><span class="current-score">Score: 0</span>
             </section>
-                
+             
             <section class="quiz"></section>
-
+  <!--- 
                 <form class="quiz-section">
                 <fieldset>
                         <p class="question">What division does the Eagles play in?</p>
@@ -40,8 +41,11 @@
                 </fieldset>
             </ul>
                 </form>
-            </section>
+            
+                -->
         </main>
+        
+        <script src="content.js"></script>
+        <script src="script.js"></script>
     </body>
-    <script></script>
 </html>
