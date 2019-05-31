@@ -1,24 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    background-color: #dcdddc;
+}
+
+header {
+    display: flex;
+    justify-content: center;
 }
 
 .eagles-logo {
-    margin-top: 50px;
+    margin-top: 15px;
     font-size: 50px;
+    background-color: lightgray;
+    color: gray;
     text-align: center;
+    width: 35%;
+    height: 200px;
 }
 
 .intro {
     font-size: 30px;
+    background-color: lightgray;
+    color: gray;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 .quiz-start {
     display: block;
+    margin-top: 10px;
+    width: 50%;
     text-align: center;
-    margin-top: 30px;
 }
 
 button {
@@ -33,39 +47,100 @@ button:hover {
 }
 
 .question {
-    text-align: center;
     font-size: 30px;
     padding-bottom: 10px;
-}
-
-.answer-field {
-    text-align: center;
-}
-
-.progression {
-    text-align: right;
-    margin-right: 100px;
-    font-size: 25px;
+    background-color: lightgray;
+    color: gray;
     margin-bottom: 25px;
 }
 
+ /*.answer-field {
+    text-align: center;
+} */
+
+/*.progression {
+    display: flex;  
+    margin-right: 100px;
+    font-size: 25px;
+    margin-bottom: 25px;
+}   
+*/
+
+.progressNum {
+    float: left;
+    font-size: 25px;
+    margin-left: 100px;
+    background-color: lightgray;
+    color: gray;
+    padding: 10px;
+    display: block;
+}
+
+.progressScore {
+    float: right;
+    font-size: 25px;
+    margin-right: 100px;
+    background-color: lightgray;
+    color: gray;
+    padding: 10px;
+    display: block;
+}
 .current-score {
-    margin-left: 30px;
+    text-align: center;
+
+}
+
+.quiz {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .pageContent {
-    text-align: center;
-    display: block;
     font-size: 30px;
     border: none;
-}
-input[type=radio] {
-    display: inline-block;
+    width: 100%;
+    background-color: gray;
+    color: darkgray;
+    text-align: center;
 }
 
-.option {
-    font-size: 20px;
+label {
+    background-color: lightgray;
+    font-size: 25px;
+    color: gray;
 }
+
+input[type="radio"] {
+     
+}
+
+.feedbackImg {
+    background-color: lightgray;
+    height: 200px;
+    margin-bottom: 25px;
+
+}
+
+.feedback {
+    background-color: lightgray;
+    padding: 10px;
+    display: block;
+}
+
+.resultImg{
+    background-color: lightgray;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.finalFeedback {
+    background-color: lightgray;
+    padding: 10px;
+    display: block;
+}
+
 
 .kick-off {
     margin-top: 20px;
@@ -76,4 +151,77 @@ input[type=radio] {
 .kick-off {
     cursor: pointer;
 }
+.inputs {
+  margin: auto 250px;
+  width: 50%;
+  text-align: left;
+  
+}
 
+
+
+@media only screen and (max-width: 640px) {
+    .eagles-logo{
+        display: block;
+        text-align: center;
+        font-size: 32px;
+        width: 100%;
+        height: 120px;
+    }
+    .intro {
+      display: block;
+      font-size: 18px;
+      width: 100%;
+      text-align: center;
+      word-wrap: break-word;
+
+    }
+    button {
+      font-size: 20px;
+    }
+    .progressNum {
+      display: block;
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+      clear: left;
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+    .progressScore {
+      display: block;
+      font-size: 16px;
+      text-align: center;
+      width: 100%;
+      clear: right;
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+    .quiz {
+      display: block;
+      font-size: 16px;
+      width: 
+    }
+    .inputs {
+  margin: auto 30px; 
+  width: 90%;
+  text-align: left;
+  padding-left: 20px;
+}
+}
+
+@media only screen and (max-width: 380px) {
+button {
+  font-size: 16px;
+}
+.kick-off{
+  font-size: 16px;
+}
+.resultImg {
+  font-size: 25px;
+}
+.inputs {
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+}
