@@ -31,7 +31,7 @@ const content = [
 
     {
         question: "Which Eagles quarterback is the All-time passing leader in franchise history?",
-        answers: ["Nick Foles", "Donavan McNabb", "Ron Jaworski", "Randall Cunningham"],
+        answers: ["Nick Foles", "Donovan McNabb", "Ron Jaworski", "Randall Cunningham"],
         correctAnswer: "Donovan McNabb"
     },
 
