@@ -7,20 +7,24 @@ header {
     justify-content: center;
 }
 
+body {
+  background-image: url("https://www.tutorperini.com/media/3539/eagles-e40_x.jpg");
+  background-size: 
+}
+
 .eagles-logo {
-    margin-top: 15px;
-    font-size: 50px;
-    background-color: lightgray;
-    color: gray;
+    margin-top: 10px;
     text-align: center;
-    width: 35%;
+    width: 50%;
     height: 200px;
+    opacity: 0.5;
 }
 
 .intro {
     font-size: 30px;
-    background-color: lightgray;
-    color: gray;
+    background-color: black;
+    opacity: .8;
+    color: white;
 }
 
 main {
@@ -39,51 +43,43 @@ button {
     margin-top: 20px;
     font-size: 40px;
     padding: 10px;
-    background-color: darkgray;
+    background-color: white;
+    border-radius: 25%;
 }
 
 button:hover {
     cursor: pointer;
+    background-color: #004953;
 }
 
 .question {
     font-size: 30px;
     padding-bottom: 10px;
-    background-color: lightgray;
-    color: gray;
+    background-color: #004953;
+    color: white;
+    text-shadow: 2px 2px black;
     margin-bottom: 25px;
 }
-
- /*.answer-field {
-    text-align: center;
-} */
-
-/*.progression {
-    display: flex;  
-    margin-right: 100px;
-    font-size: 25px;
-    margin-bottom: 25px;
-}   
-*/
 
 .progressNum {
     float: left;
     font-size: 25px;
-    margin-left: 100px;
-    background-color: lightgray;
-    color: gray;
-    padding: 10px;
+    background-color: black;
+    opacity: .8;
+    color: white;
     display: block;
+    padding: 0 5px;
 }
 
 .progressScore {
     float: right;
     font-size: 25px;
-    margin-right: 100px;
-    background-color: lightgray;
-    color: gray;
-    padding: 10px;
+    margin-right: 50px;
+    background-color: black;
+    opacity: .8;
+    color: white;
     display: block;
+    padding: 0 5px;
 }
 .current-score {
     text-align: center;
@@ -97,46 +93,41 @@ button:hover {
     
 }
 
-.pageContent {
-    font-size: 30px;
+fieldset {
     border: none;
-    width: 100%;
-    background-color: gray;
-    color: darkgray;
-    text-align: center;
+    background-color: black;
+    opacity: .9;
 }
 
 label {
-    background-color: lightgray;
-    font-size: 25px;
-    color: gray;
+    font-size: 20px;
+    color: black;
+    width: 100%;
+    background-color: white;
+    padding-right: 10px;
 }
 
-input[type="radio"] {
-     
+.answer {
+     margin-bottom: 5px;
 }
 
-.feedbackImg {
-    background-color: lightgray;
-    height: 200px;
-    margin-bottom: 25px;
-
+.fail, .almost, .pass {
+ width: 100%;
 }
 
 .feedback {
-    background-color: lightgray;
+    background-color: white;
     padding: 10px;
     display: block;
 }
 
-.resultImg{
-    background-color: lightgray;
-    height: 200px;
-    margin-bottom: 25px;
+.feedbackImage {
+    width: 275px;
+    height: 173px;
 }
 
 .finalFeedback {
-    background-color: lightgray;
+    background-color: white;
     padding: 10px;
     display: block;
 }
@@ -152,20 +143,60 @@ input[type="radio"] {
     cursor: pointer;
 }
 .inputs {
-  margin: auto 250px;
-  width: 50%;
-  text-align: left;
+  width: 100%;
+  text-align: center;
   
 }
 
+}
+@media only screen and (max-width: 1200px) {
+  .eagles-logo {
+    margin-top: 15px;
+    font-size: 50px;
+    color: gray;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    opacity: 0.5;
+}
 
 
-@media only screen and (max-width: 640px) {
+  .progressNum {
+    float: left;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 10px black;
+    padding: 10px;
+    display: block;
+}
+
+.progressScore {
+    float: right;
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 10px black;
+    padding: 10px;
+    display: block;
+}
+  .quiz-start {
+    display: block;
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+}
+
+
+@media only screen and (max-width: 900px) {
     .eagles-logo{
         display: block;
         text-align: center;
         font-size: 32px;
-        width: 100%;
+        width: 80%;
         height: 120px;
     }
     .intro {
@@ -181,16 +212,16 @@ input[type="radio"] {
     }
     .progressNum {
       display: block;
-      font-size: 16px;
+      font-size: 25px;
       width: 100%;
       text-align: center;
       clear: left;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       margin-left: 0;
     }
     .progressScore {
       display: block;
-      font-size: 16px;
+      font-size: 25px;
       text-align: center;
       width: 100%;
       clear: right;
@@ -199,29 +230,53 @@ input[type="radio"] {
     }
     .quiz {
       display: block;
-      font-size: 16px;
-      width: 
+      font-size: 20px;
     }
     .inputs {
-  margin: auto 30px; 
-  width: 90%;
-  text-align: left;
-  padding-left: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+    .answer {
+      margin-bottom: 5px;
+    }
+
+.pass, .fail, .almost {
+  width: 100%;
+}
+.feedbackImage {
+  width: 100%;
 }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 375px) {
 button {
   font-size: 16px;
 }
 .kick-off{
   font-size: 16px;
 }
-.resultImg {
-  font-size: 25px;
-}
-.inputs {
-  margin: 0 auto;
+.pass, .fail, .almost {
   width: 100%;
-  text-align: left;
+}
+
+.inputs {
+  width: 100%;
+  text-align: center;
+}
+
+.answers {
+  margin-bottom: 5px;
+}
+
+.feedbackImage {
+  width: 100%;
+}
+
+.quiz-start {
+    display: block;
+    margin-top: 10px;
+    width: 80%;
+    text-align: center;
+}
 }
