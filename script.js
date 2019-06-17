@@ -47,19 +47,19 @@ function quizPage(questionNumber) {
                     <legend class="question">${question}</legend>
                     <div class="inputs">
                         <div class="answer">
-                            <label for="${answer[0]}">
+                            <label class="answerLabel" for="${answer[0]}">
                             <input type="radio" name="option" id="${answer[0]}" value="${answer[0]}" required>${answer[0]}</label>
                         </div>
                         <div class="answer">
-                            <label for="${answer[1]}">
+                            <label class="answerLabel" for="${answer[1]}">
                             <input type="radio" name="option" id="${answer[1]}" value="${answer[1]}" required>${answer[1]}</label>
                         </div>
                         <div class="answer">
-                            <label for="${answer[2]}">
+                            <label class="answerLabel" for="${answer[2]}">
                             <input type="radio" name="option" id="${answer[2]}" value="${answer[2]}" required>${answer[2]}</label>
                         </div>
                         <div class="answer">
-                            <label for="${answer[3]}">
+                            <label class="answerLabel" for="${answer[3]}">
                             <input type="radio" name="option" id="${answer[3]}" value="${answer[3]}" required>${answer[3]}</label>
                         </div>
                     </div>
@@ -240,7 +240,10 @@ let resultPage = `<div class="progressNum">
 //The user will be allowed to restart the quiz on the results page
 function restartButton() {
 $('.quiz-start').on('click', '.restart', function (event) {
-  location.reload();
+  //location.reload();
+  currentScore = 0;
+  questionNumber = 0;
+  quizPage(questionNumber);
 });
 }
 

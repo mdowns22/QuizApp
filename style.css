@@ -107,6 +107,15 @@ label {
     padding-right: 10px;
 }
 
+.answerLabel:hover {
+  cursor: pointer;
+  background-color: #004953;
+}
+
+input[name=option]:hover {
+  background-color: #004953;
+}
+
 .answer {
      margin-bottom: 5px;
 }
