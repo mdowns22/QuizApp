@@ -241,6 +241,7 @@ let resultPage = `<div class="progressNum">
 function restartButton() {
 $('.quiz-start').on('click', '.restart', function (event) {
   //location.reload();
+  console.log('Quiz restarted');
   currentScore = 0;
   questionNumber = 0;
   quizPage(questionNumber);
